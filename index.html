@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Greetings!<br>This is <span>Dhruv Tripathi</span> <br></h1>
+                <p>Front-end Developer | Designer | Artist</p>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------About Section--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/About.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About</h1>
+                    <p>I am currently pursuing a bachelors in technology from Pune.
+                    I am enthusiastic about creating crearive solutions to real-world problems
+                    using critical thinking and modern tools like HTML, CSS and Javascript. 
+                    I have also practiced basic desigining through applications such as Adobe Illustrator. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Front-End Web Developmemt</span><br>Designing interactive web-interfaces</li>
+                            <li><span>Java Programming</span><br>Logical problem solving</li>
+                            <li><span>Basic Designing</span><br>Proficiency in tools like Adobe Illustrator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2025</span><br>Front-end Web Development Intern at Codtech IT Solutions</li>
+                            <li><span>2024-present</span><br>Public Relations Coordinator and Social Media Manager at VAAQIF</li>
+                            <li><span>2024-present</span><br>Public Relations Coordinator at MALANG</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024-2027</span><br>B.Tech from BVDU College of Engineering, Pune</li>
+                            <li><span>2022</span><br>ISC Boards from Mary Lucas School & College, Prayagraj</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------Services Section-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Developer</h2>
+                    <p>Designing creative and unique solutions for real world problems through interactive websites</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h2>Graphic Designer</h2>
+                    <p>Creating designs that bring your imaginations on your screen using modern applications like Adobe Illustrator</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>Social Media Manager</h2>
+                    <p>Aiming at maximizing reach and interaction through relatable and creative posts</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------Portfolio Section-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="Images/Social1.jpg">
+                    <div class="layer">
+                        <h3>Stock</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere reprehenderit deserunt 
+                        sint harum excepturi soluta incidunt, ipsum culpa? Est iste pariatur inventore quos optio ipsa repellendus beatae porro quae maxime.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Project1.jpg">
+                    <div class="layer">
+                        <h3>Movie Trivia</h3>
+                        <p>This is a simple, interactive movie quiz built using HTML, CSS, and JavaScript. The quiz tests users' knowledge of popular movies with multiple-choice questions, and it provides instant feedback for each answer.</p>
+                        <a href="https://github.com/DhruvTripathi07/Movie-Quiz" target="_main"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Social1.jpg">
+                    <div class="layer">
+                        <h3>Social Media Account</h3>
+                        <p>Social media account of a college rock band named VAAQIF handled by me.</p>
+                        <a href="https://www.instagram.com/vaaqifcoe/" target="_main"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------------Contact Section---------------- -->
+     <div id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i>dhruvkalakaar7@gmail.com <br> dhruvpramodtripathi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(+91)96512287283</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/dhruvtripathi07/" target="_main"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/DhruvTripathi07" target="_main"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/dhruv_mosby/" target="_main"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Dhruv Tripathi</p>
+        </div>
+     </div>
+
+<script src="script.js"></script>
+</body>
+</html>
